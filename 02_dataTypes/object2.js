@@ -24,11 +24,18 @@ const obj3 ={5:"a",6:"b"};
 const obj4={...obj1,...obj2,...obj3}
 //console.log(obj4);
 //users[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
+//console.log(tinderUser);
+/* console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty("isloggedin"));
+console.log(tinderUser.hasOwnProperty("isloggedin")); */
+const course={
+    CourseName: 'JS',
+    Price:999,
+    CourseInstructor:'Arpit'
+}
+const{CourseInstructor : instructor }=course;
+console.log(instructor);
 
 
 

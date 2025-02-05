@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <script>
+        //  function addlanguage(lanName){
+        //     const li =document.createElement('li')
+        //     li.innerHTML = `${lanName}`;
+        //     document.querySelector('.language').appendChild(li)
+
+        // }
+       
+        function addoptLanguage(langu){
+            const li = document.createElement('li')
+
+            li.appendChild(document.createTextNode(langu))
+            document.querySelector('.language').appendChild(li)
+        }
+        addoptLanguage('python')
+        addoptLanguage('ruby')
+        addoptLanguage('java')
+        //edit
+        const secondLang = document.querySelector('li:nth-child(2)')
+        //secondLang.innerHTML= 'mojo'
+        const newLi = document.createElement('li')
+        newLi.textContent = "mojo"
+        secondLang.replaceWith(newLi)
+        //edit
+        const firstLang = document.querySelector('li:first-child')
+        firstLang.outerHTML= 'typescript'
+        //remove
+        const lastElement = document.querySelector('li:last-child')
+        lastElement.remove('java')
+    </script>
+</body>
+</html>
